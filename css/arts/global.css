@@ -1,0 +1,21 @@
+:root {
+    --sun-size: 3em;
+}
+.artwork {
+    width: 100%;
+    height: 280px;
+    position: relative;
+    background: #f0f0f0;
+}
+.sky {
+    background: linear-gradient(to bottom, cyan, lightcyan);
+    height: 50%;
+}
+.sun {
+    width: var(--sun-size);
+    height: var(--sun-size);
+    border-radius: 50%;
+    background: moccasin;
+    position: absolute;
+    top: 1em;
+}

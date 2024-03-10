@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+:root {
+    --border-flash-width: 4px;
+    --aside-width: 240px;
+    --footer-height: 5em;
+}
+body, html {
+    font-family: "Comic Sans MS", "TSCu_Comic", "Chalkboard", "Comic Neue", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: var(--aside-width);
+    background: orchid;
+    z-index: 1;
+}
+aside > nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+aside > nav > ul > li {
+    padding: 1ch;
+    background: darkmagenta;
+}
+aside > nav > ul > li:hover {
+    background: magenta;
+}
+aside > nav > ul > li > a {
+    display: inline-block;
+    width: 100%;
+    color: white;
+    text-shadow: 1px 1px 0px black
+    1px -1px 0px black
+    -1px -1px 0px black
+    -1px 1px 0px black;
+}
+.logo-container {
+    background: linear-gradient(to left, crimson, gold, green, blue, magenta);
+    margin: 0;
+    padding: 0.25ch 0.5ch;
+}
+#howtobebroke-logo {
+    font-size: 16pt;
+    font-weight: bold;
+    background: linear-gradient(to right, crimson, gold, green, blue, magenta);
+    text-shadow: 0px 0px 3px white;
+    background-clip: text;
+    color: #11111199;
+}
+#content {
+    position: relative;
+    left: var(--aside-width);
+    overflow: hidden;
+    width: calc(100% - var(--aside-width));
+    padding: 0 0 var(--footer-height) 0;
+    background: transparent;
+    min-height: calc(100vh - var(--footer-height));
+}
+h1 {font-size:36pt}
+h2 {font-size:30pt}
+h3 {font-size:24pt}
+h4 {font-size:21pt}
+h5 {font-size:18pt}
+h6 {font-size:16pt}
+p { font-size:14pt}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background: purple;
+    color: white;
+    text-align: center;
+    z-index: 2;
+    height: var(--footer-height);
+}
+footer p {
+    margin: 0;
+    padding: 0.5ch;
+}
+.flex-row img {
+    object-fit: scale-down;
+}
+.border-flash {
+    animation-name: border-flash;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes border-flash {
+    0% {
+        border: dotted var(--border-flash-width) red;
+    }
+    12% {
+        border: dotted var(--border-flash-width) red;
+    }
+    13% {
+        border: dashed var(--border-flash-width) darkorange;
+    }
+    24% {
+        border: dashed var(--border-flash-width) darkorange;
+    }
+    25% {
+        border: dotted var(--border-flash-width) gold;
+    }
+    37% {
+        border: dotted var(--border-flash-width) gold;
+    }
+    38% {
+        border: dashed var(--border-flash-width) greenyellow;
+    }
+    49% {
+        border: dashed var(--border-flash-width) greenyellow;
+    }
+    50% {
+        border: dotted var(--border-flash-width) green;
+    }
+    62% {
+        border: dotted var(--border-flash-width) green;
+    }
+    63% {
+        border: dashed var(--border-flash-width) darkcyan;
+    }
+    74% {
+        border: dashed var(--border-flash-width) darkcyan;
+    }
+    75% {
+        border: dotted var(--border-flash-width) blue;
+    }
+    87% {
+        border: dotted var(--border-flash-width) blue;
+    }
+    88% {
+        border: dashed var(--border-flash-width) purple;
+    }
+    100% {
+        border: dashed var(--border-flash-width) purple;
+    }
+}
+.dancing-cat-slide-container {
+    overflow: hidden;
+}
+.dancing-cat-slide-container img {
+    height: 200px !important;
+}
+.dancing-cat-slide {
+    animation-name: dancing-cat-slide;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    width: auto;
+}
+@keyframes dancing-cat-slide {
+    0% {
+        transform: translateX(-25vw);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}

@@ -1,0 +1,18 @@
+#theSeaside .sun {
+    left: calc(50% - calc(var(--sun-size) / 2))
+}
+#theSeaside #water {
+    background: linear-gradient(to bottom, darkblue, blue);
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 40%;
+}
+#theSeaside #sand {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to top, orange, gold);
+}
