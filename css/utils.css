@@ -115,6 +115,13 @@ https://mihaelkyeah.github.io
 .pr-0 { padding-right: 0; }
 
 .text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+.fw-semibold { font-weight: bolder; }
+.fw-bold { font-weight: bold; }
+.fw-light { font-weight: lighter; }
+.fs-italic { font-style: italic; }
 
 .d-flex { display: flex; }
 .flex-row { flex-direction: row; }
@@ -137,10 +144,6 @@ https://mihaelkyeah.github.io
 .align-items-end { align-items: flex-end }
 .align-items-baseline { align-items: baseline }
 .align-items-stretch { align-items: stretch }
-
-.fw-semibold { font-weight: bolder; }
-.fw-bold { font-weight: bold; }
-.fw-light { font-weight: lighter; }
 
 .btn, .rounded { border-radius: 0.5em; }
 .rounded-2 { border-radius: 1em; }
