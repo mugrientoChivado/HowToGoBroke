@@ -18,7 +18,7 @@ window.addEventListener("load", () => {
     for(let i = 0; i < navButtons.length; i++) {
         navButtons[i].addEventListener("click", navigateWithinContainer);
     }
-    navButtons[1].click();
+    navButtons[0].click();
 });
 
 function navigateWithinContainer(event) {
