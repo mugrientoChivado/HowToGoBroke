@@ -1,3 +1,55 @@
 #theForest .sun {
     right: 12%;
 }
+#theForest #trees {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    background: linear-gradient(to top, #532 0% 80%, green 87.6% 100%);
+    overflow-inline: clip;
+}
+#trees .tree {
+    position: relative;
+    width: 4em;
+    height: calc(100% + 1.5em);
+    bottom: 1.25em;
+    border-top-left-radius: 4em;
+    border-top-right-radius: 4em;
+    background: linear-gradient(to left, #00000000 0% 24%, saddlebrown 25% 74%, #00000000 75% 100%);
+}
+#trees .tree-top {
+    margin-bottom: 2em;
+    border-radius: 45%;
+}
+#trees .tree:nth-child(odd) .tree-top {
+    background: green;
+    height: 3em;
+    width: 3.75em;
+}
+#trees .tree:nth-child(even) .tree-top {
+    background: seagreen;
+    height: 3.25em;
+    width: 3.62em;
+}
+#grass {
+    position: absolute;
+    background: darkgreen;
+    height: 25%;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#grass .grass-row {
+    width: 2.75%;
+    height: 100%;
+}
+#grass .grass-row:nth-child(odd) {
+    background: linear-gradient(to top, limegreen, green);
+}
+#grass .grass-row:nth-child(even) {
+    background: linear-gradient(to bottom, limegreen, green);
+}

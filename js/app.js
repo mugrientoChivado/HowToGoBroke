@@ -14,11 +14,11 @@ let stopped = false;
 let playingAudio = false;
 
 window.addEventListener("load", () => {
-    loadPage("./pages/home.html");
     let navButtons = document.querySelectorAll(".nav-link");
     for(let i = 0; i < navButtons.length; i++) {
         navButtons[i].addEventListener("click", navigateWithinContainer);
     }
+    navButtons[1].click();
 });
 
 function navigateWithinContainer(event) {
